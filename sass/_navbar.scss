@@ -1,4 +1,5 @@
 @use "variables";
+@use "mixinsfunc";
 
 #{variables.$nav-selector} {
   background-color: variables.$color-1;
@@ -7,10 +8,9 @@
     width: 90%;
     margin: 0 auto;
     height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     gap: 1em;
+    
+    @include mixinsfunc.crear-flexbox(space-evenly);
   }
 
   &__item {

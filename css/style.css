@@ -1,5 +1,6 @@
 * {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -14,10 +15,10 @@ body {
   width: 90%;
   margin: 0 auto;
   height: 70px;
+  gap: 1em;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 1em;
 }
 .nav__item {
   color: white;
@@ -33,6 +34,28 @@ body {
   .nav__container {
     justify-content: flex-end;
   }
+}
+
+.hero__container {
+  height: calc(100vh - 70px);
+  background-image: linear-gradient(#000, rgba(47, 107, 227, 0.7921568627)), url("../img/office.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__title {
+  font-size: 2.5rem;
+  margin-bottom: 0.625rem;
+}
+.hero__texts {
+  width: 90%;
+  color: white;
+}
+.hero__paragraph {
+  font-size: 1.125rem;
 }
 
 /*# sourceMappingURL=style.css.map */
